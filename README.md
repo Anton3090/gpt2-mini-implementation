@@ -66,6 +66,8 @@ print(story_gen("Once upon a time", max_length=200))
 
 - **Final Training Loss**: 1.25
 - **Validation Loss**: 1.25
+- **Training Perplexity**  3.49
+- **Validation Perplexity**  3.49
 - **Training Time**: ~2 hrs on T4 GPU (for 10k iters)
 
 ## 💾 Dataset Details

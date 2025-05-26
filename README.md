@@ -1,6 +1,6 @@
 # 📚 TinyStories Language Model
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)]([https://colab.research.google.com/github/your-repo/your-notebook.ipynb](https://colab.research.google.com/github/Anton3090/gpt2-mini-implementation/blob/main/GPT2_From_Scratch.ipynb))  
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your-repo/your-notebook.ipynb)  
 [![Hugging Face Dataset](https://img.shields.io/badge/dataset-TinyStories-blue)](https://huggingface.co/datasets/roneneldan/TinyStories)
 
 A transformer-based language model trained on the TinyStories dataset to generate short children's stories.
@@ -23,7 +23,7 @@ A transformer-based language model trained on the TinyStories dataset to generat
 
 ```bash
 pip install torch datasets numpy
-````
+
 
 ## 🚀 Usage
 
@@ -87,7 +87,7 @@ The model achieves reasonable coherence for its size, though it sometimes:
 
 ## 📄 License
 
-MIT License - see [LICENSE](LICENSE) file (create one if needed)
+MIT License - see [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgements
 

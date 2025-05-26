@@ -4,9 +4,7 @@
 [![Hugging Face Dataset](https://img.shields.io/badge/dataset-TinyStories-blue)](https://huggingface.co/datasets/roneneldan/TinyStories)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A lightweight GPT-style transformer model trained to generate children's stories from the TinyStories dataset.
-
-![Generated Story Example](https://via.placeholder.com/600x200?text=Sample+Story+Output) *(example placeholder)*
+A transformer-based language model trained on the TinyStories dataset to generate short children's stories.
 
 ## ✨ Key Features
 
@@ -67,8 +65,6 @@ print(story_gen("Once upon a time", max_length=200))
 | Optimizer          | AdamW                  |
 
 ## 📊 Training Performance
-
-![Training Curves](https://via.placeholder.com/600x300?text=Loss+Curves) *(placeholder)*
 
 - **Final Training Loss**: 1.25
 - **Validation Loss**: 1.25

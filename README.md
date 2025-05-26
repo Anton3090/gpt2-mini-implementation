@@ -93,5 +93,3 @@ MIT License - see [LICENSE](LICENSE) file
 
 * TinyStories dataset by Ronen Eldan
 * Andrej Karpathy's nanoGPT for model architecture inspiration
-
-```

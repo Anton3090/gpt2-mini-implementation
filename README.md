@@ -1,6 +1,6 @@
 # 📚 TinyStories Language Model
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your-repo/your-notebook.ipynb)  
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/gpt_mini_implementation/GPT2_From_Scratch.ipynb)  
 [![Hugging Face Dataset](https://img.shields.io/badge/dataset-TinyStories-blue)](https://huggingface.co/datasets/roneneldan/TinyStories)
 
 A transformer-based language model trained on the TinyStories dataset to generate short children's stories.

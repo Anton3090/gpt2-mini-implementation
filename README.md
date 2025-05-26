@@ -80,19 +80,27 @@ The [TinyStories](https://huggingface.co/datasets/roneneldan/TinyStories) datase
 ## 📥 Load model weights
 
 ```python
-import torch
-from model import BigramLanguageModel
+# Save model weights (PyTorch format)
+torch.save(model.state_dict(), 'model_weights.pth')
 
-# Initialize model
-model = BigramLanguageModel()
-model.load_state_dict(torch.load('model_weights.pth'))
-model.eval()
+# Save vocabulary and metadata (JSON format)
+data_to_save = {
+    'vocab': {
+        'stoi': stoi,  # Your string-to-index mapping
+        'itos': itos,  # Your index-to-string mapping
+    },
+    'metrics': {  # Optional training stats
+        'train_loss': losses['train']['loss'].item(),
+        'val_loss': losses['val']['loss'].item(),
+        'train_ppl': losses['train']['perplexity'].item(),
+        'val_ppl': losses['val']['perplexity'].item(),
+    }
+}
 
-# Load vocabulary
-import json
-with open('model_metrics.json') as f:
-    vocab = json.load(f)
-    stoi, itos = vocab['stoi'], vocab['itos']
+with open('model_vocab_metrics.json', 'w') as f:
+    json.dump(data_to_save, f, indent=4)
+
+print("Saved: model_weights.pth + model_vocab_metrics.json")
 ```
 
 ## 📝 Sample Output
